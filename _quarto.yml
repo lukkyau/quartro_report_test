@@ -31,3 +31,4 @@ format:
       light: [flatly, theme.scss]
     toc: false
     embed-resources: false
+    self-contained: true
