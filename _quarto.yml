@@ -32,4 +32,4 @@ format:
     theme:
       light: [flatly, theme.scss]
     toc: false
-    embed-resources: false
+    embed-resources: true
