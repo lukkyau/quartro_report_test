@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Analytics"
+  sidebar:
+    style: docked
+    search: false
+    contents:
+      - text: "Overview"
+        href: index.qmd
+
+      - section: "Total"
+        contents:
+          - text: "ABC"
+            href: total/abc.qmd
+
+      - section: "ABC"
+        contents:
+          - text: "test 1"
+            href: abc/test1.qmd
+          - text: "test 2"
+            href: abc/test2.qmd
+          - text: "test 3"
+            href: abc/test3.qmd
+
+format:
+  html:
+    theme:
+      light: [flatly, theme.scss]
+    toc: false
+    embed-resources: false

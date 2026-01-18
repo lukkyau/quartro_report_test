@@ -1,0 +1,9 @@
+
+---
+title: "ABC - test3"
+params:
+  brand: "ABC"
+  product: "test3"
+---
+
+{{< include ../_test_template.qmd >}}

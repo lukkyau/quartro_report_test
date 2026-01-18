@@ -1,0 +1,9 @@
+
+---
+title: "total"
+params:
+  brand: "abc"
+  product: null
+---
+
+{{< include ../_test_template.qmd >}}

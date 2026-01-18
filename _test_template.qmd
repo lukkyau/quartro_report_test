@@ -1,0 +1,37 @@
+
+```{r}
+library(tidyverse)
+library(scales)
+library(here)
+
+raw <- read_csv(
+  here("data", "data.csv"),
+  show_col_types = FALSE
+)
+
+data <- raw |>
+  mutate(date = as.Date(date)) |>
+  filter(
+    if (!is.null(params$brand)) brand == params$brand else TRUE,
+    if (!is.null(params$product)) product == params$product else TRUE
+  )
+```
+
+## Sales Trend
+
+```{r}
+ggplot(data, aes(date, index)) +
+  geom_line(linewidth = 1, color = "#374151") +
+  theme_minimal() +
+  labs(x = "Week", y = "Units Sold")
+```
+
+## Revenue Distribution
+
+```{r}
+ggplot(data, aes(product, index, fill = product)) +
+  geom_boxplot(alpha = 0.8) +
+  scale_y_continuous(labels = dollar) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```

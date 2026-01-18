@@ -1,0 +1,19 @@
+
+/*-- scss:defaults --*/
+$body-bg: #f9fafb;
+$body-color: #111827;
+$link-color: #4b5563;
+$font-family-sans-serif: "Inter", "Segoe UI", system-ui, sans-serif;
+
+
+
+/*-- scss:rules --*/
+.sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar a.active {
+  font-weight: 600;
+}
+
