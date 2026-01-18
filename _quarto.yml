@@ -24,6 +24,8 @@ website:
             href: abc/test2.qmd
           - text: "test 3"
             href: abc/test3.qmd
+          - text: "check"
+            href: abc/test3.qmd
 
 format:
   html:
@@ -31,4 +33,3 @@ format:
       light: [flatly, theme.scss]
     toc: false
     embed-resources: false
-    self-contained: true
